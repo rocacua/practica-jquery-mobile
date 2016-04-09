@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ricardo Ocaña Gasco, WIW Tarea 2, Tema 7, jQuery Mobile</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+    <script type="text/javascript" src="http://crypto-js.googlecode.com/svn/tags/3.0.2/build/rollups/md5.js"></script>
+    <script type="text/javascript" src="validation/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="validation/localization/messages_es.min.js"></script>
+    <script type="text/javascript" src="validation/additional-methods.min.js"></script>
+    <script type="text/javascript" src="assets/users.json"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript">
+        
+    </script>
+</head>
+<body>
+    <div data-role="page" id="main">
+        <div data-role="header">
+            <h1>
+                Calificaciones
+            </h1>
+        </div>
+        <div data-role="content">
+            <table id="tablaCalificaciones">
+                <thead>
+                    <tr>
+                        <th>ALUMNO</th>
+                        <th>CONTENIDO</th>
+                        <th>PRESENTACIÓN</th>
+                        <th>EXPRESIÓN ORAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Perico Palotes</td>
+                        <td id="contenidoPerico_Palotes"></td>
+                        <td id="calidadPerico_Palotes"></td>
+                        <td id="oralPerico_Palotes"></td>
+                    </tr>
+                    <tr>
+                        <td>Maria Maza</td>
+                        <td id="contenidoMaria_Maza"></td>
+                        <td id="calidadMaria_Maza"></td>
+                        <td id="oralMaria_Maza"></td>
+                    </tr>
+                    <tr>
+                        <td>Ana Pina</td>
+                        <td id="contenidoAna_Pina"></td>
+                        <td id="calidadAna_Pina"></td>
+                        <td id="oralAna_Pina"></td>
+                    </tr>
+                    <tr>
+                        <td>Pedro Guerra</td>
+                        <td id="contenidoPedro_Guerra"></td>
+                        <td id="calidadPedro_Guerra"></td>
+                        <td id="oralPedro_Guerra"></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <a  data-role="button" href="seleccionar_alumno.html">Continuar</a>
+        </div>
+        <div data-role="footer" class="ui-bar">
+            
+        </div>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ricardo Ocaña Gasco, WIW Tarea 2, Tema 7, jQuery Mobile</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+    <script type="text/javascript" src="http://crypto-js.googlecode.com/svn/tags/3.0.2/build/rollups/md5.js"></script>
+    <script type="text/javascript" src="validation/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="validation/localization/messages_es.min.js"></script>
+    <script type="text/javascript" src="validation/additional-methods.min.js"></script>
+    <script type="text/javascript" src="assets/users.json"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript">
+        
+    </script>
+</head>
+<body>
+    <div data-role="page" id="main">
+        <div data-role="header">
+            <h1>
+                Calificar a <span class="spanAlumno"></span>
+            </h1>
+        </div>
+        <div data-role="content">
+            <form action="calificar.html" method="get" id="calificar">
+                <input type="hidden" name="nom" id="nom" />
+                <h2>
+                    Clique en los botones para ver la guia de calificación de cada campo.
+                </h2>
+                <div data-role="fieldcontain">
+                    <label for="contenido">
+                        CONTENIDO
+                        <a data-role="button" href="#explicacion1" data-rel="dialog" data-transition="pop">Guia de contenido</a>
+                    </label>
+                    <input type="text" name="contenido" id="contenido" />
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="calidad">
+                        PRESENTACIÓN
+                        <a data-role="button" href="#explicacion2" data-rel="dialog" data-transition="pop">Guia de presentación</a>
+                    </label>
+                    <input type="text" name="calidad" id="calidad" />
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="calidad">
+                        EXPRESIÓN ORAL
+                        <a data-role="button" href="#explicacion3" data-rel="dialog" data-transition="pop">Guia de expresión oral</a>
+                    </label>
+                    <input type="text" name="oral" id="oral" />
+                </div>
+                <div data-role="fieldcontain">
+                    <input type="submit" name="califica" id="califica" value="Calificar" />
+                </div>
+            </form>
+        </div>
+        <div data-role="footer" class="ui-bar">
+            
+        </div>
+    </div>
+    
+    <!--POPUP 1-->
+    <div data-role="page" id="explicacion1" data-add-back-btn=”true”>
+        <div data-role="header">
+            <h1>
+                Guia de contenido
+            </h1>
+        </div>
+        <div data-role="content">
+            <h2>
+                CONTENIDO DEL PROYECTO (Máximo 6,5 ptos. Representa el 65%)
+            </h2>
+            <ul>
+                <li>
+                    Planteamiento 
+                    <ul>
+                        <li>Objetivos</li>
+                        <li>Recursos utilizados</li>
+                        <li>Destinatarios</li>
+                        <li>Justificación del proyecto</li>
+                    </ul>
+                </li>
+                <li>
+                    Contenido
+                    <ul>
+                        <li>Metodología seguida</li>
+                        <li>Claridad</li>
+                        <li>Actividades o acciones realizadas</li>
+                        <li>Documentación elaborada</li>
+                    </ul>
+                </li>
+                <li>
+                    Resultados obtenidos
+                    <ul>
+                        <li>Conclusiones</li>
+                        <li>Objetivos conseguidos</li>
+                        <li>grado de consecución</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer">
+            <h4>
+                Pie de página 2
+            </h4>
+        </div>
+    </div>
+    
+    <!--POPUP 1-->
+    <div data-role="page" id="explicacion2" data-add-back-btn=”true”>
+        <div data-role="header">
+            <h1>
+                Guia de presentación
+            </h1>
+        </div>
+        <div data-role="content">
+            <h2>
+                CALIDAD DE PRESENTACION (Máx. 1 pto. Representa el 10 %)
+            </h2>
+            <ul>
+                <li>
+                    Presentación escrita.
+                </li>
+                <li>
+                    Redacción y claridad del texto
+                </li>
+                <li>
+                    Organización del contenido
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer">
+            <h4>
+                Pie de página 2
+            </h4>
+        </div>
+    </div>
+    
+    <!--POPUP 3-->
+    <div data-role="page" id="explicacion3" data-add-back-btn=”true”>
+        <div data-role="header">
+            <h1>
+                Guia de expresión oral
+            </h1>
+        </div>
+        <div data-role="content">
+            <h2>
+                EXPRESIÓN ORAL (Máximo 2,5 ptos. Representa el 25%)
+            </h2>
+            <ul>
+                <li>
+                    Entrada del alumno
+                </li>
+                <li>
+                    Indumentaria
+                </li>
+                <li>
+                    Introducción: ¿Es atractiva? ¿Queda claro el proyecto?
+                </li>
+                <li>
+                    Desarrollo: Orden en las ideas. Claridad en la exposición. Aclaración de términos técnicos
+                </li>
+                <li>
+                    Conclusión: ¿Queda claro el objetivo del proyecto? ¿Lo vende bien?
+                </li>
+                <li>
+                    Seguridad en lo que expone. La presentación está trabajada (power -point otros)
+                </li>
+                <li>
+                    Entusiasmo en lo que expone
+                </li>
+                <li>
+                    Expresión oral:
+                    <ul>
+                        <li>
+                            Entonación
+                        </li>
+                        <li>
+                            Volumen
+                        </li>
+                        <li>
+                            Velocidad
+                        </li>
+                        <li>
+                            Vacilación en la voz
+                        </li>
+                        <li>
+                            Pausas
+                        </li>
+                        <li>
+                            Utilización de muletillas
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Duración: ¿Se adecua a lo estipulado?
+                </li>
+                <li>
+                    Lenguaje no verbal:
+                    <ul>
+                        <li>
+                            Mirada: ¿dirige la mirada a todo el auditorio?
+                        </li>
+                        <li>
+                            Sonrisa/expresión facial positiva
+                        </li>
+                        <li>
+                            Posición correcta del cuerpo
+                        </li>
+                        <li>
+                            Tics, gestos nerviosos
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    *Atención del público: * ¿Logra atraer la atención del público?
+                </li>
+                <li>
+                    Preguntas realizadas: ¿Responde de forma coherente?
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer">
+            <h4>
+                Pie de página 2
+            </h4>
+        </div>
+    </div>
+</body>
+</html>

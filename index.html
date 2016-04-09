@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ricardo Ocaña Gasco, WIW Tarea 2, Tema 7, jQuery Mobile</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+    <script type="text/javascript" src="http://crypto-js.googlecode.com/svn/tags/3.0.2/build/rollups/md5.js"></script>
+    <script type="text/javascript" src="validation/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="validation/localization/messages_es.min.js"></script>
+    <script type="text/javascript" src="validation/additional-methods.min.js"></script>
+    <script type="text/javascript" src="assets/users.json"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript">
+        
+    </script>
+</head>
+<body>
+    <div data-role="page" id="main">
+        <div data-role="header">
+            <h1>
+                Acceder
+            </h1>
+        </div>
+        <div data-role="content">
+            <form action="seleccionar_alumno.html" method="get" id="formulario">
+                <h2>
+                    Ingresa tus datos
+                </h2>
+                <div data-role="fieldcontain">
+                    <label for="name">
+                        Login:
+                    </label>
+                    <input type="text" name="name" id="name" value="" />
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="password">
+                        Password:
+                    </label>
+                    <input type="password" name="password" id="password" />
+                </div>
+                <div data-role="fieldcontain">
+                    <input type="submit" name="entrar" id="entrar" value="Entrar" />
+                </div>
+            </form>
+        </div>
+        <div data-role="footer" class="ui-bar">
+            
+        </div>
+    </div>
+</body>
+</html>
